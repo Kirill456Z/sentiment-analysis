@@ -8,7 +8,7 @@ model = None
 
 @app.route("/")
 def index_page():
-    return get_prediction("Today I have had an amazing day")
+    return get_prediction("Сегодня была замечательная погода")
 
 
 @app.route("/get_prediction", methods=["GET", "POST"])
@@ -21,6 +21,6 @@ def get_prediction(text=""):
 
 
 if __name__ == "__main__":
-    with open("model.pkl", 'rb') as file:
+    with open("model_rus.pkl", 'rb') as file:
         model = load(file)
-    app.run(debug=True)
+    app.run(debug=False)
