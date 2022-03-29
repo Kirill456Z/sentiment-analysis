@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <title>Text sentiment classifier</title>
+</head>
+<body>
+<div class="wrapper">
+    <form action="{{url_for('get_prediction')}}" method="post">
+        <p class="prompt">Введите текст</p>
+        <textarea name=text rows=5 cols=40>{{ text }}</textarea><br>
+        <input type=submit value="Оценить">
+    </form>
+    <p>Эмоциальный окрас текста: {{result}}</p>
+    <p class="proba">(Вероятность: {{prediction_prob}})</p>
+</div>
+</body>
+</html>

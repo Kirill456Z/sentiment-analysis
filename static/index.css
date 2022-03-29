@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto";
+}
+
+.wrapper {
+    width: 70vw;
+    margin: 12px auto;
+    background-color: whitesmoke;
+    color: #242124;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+    margin: 10px auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.proba {
+    font-size: 10px;
+}
