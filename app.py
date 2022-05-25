@@ -8,7 +8,7 @@ model = None
 
 @app.route("/")
 def index_page():
-    return get_prediction("Сегодня была замечательная погода")
+    return get_prediction("Прекрасный продукт")
 
 
 @app.route("/get_prediction", methods=["GET", "POST"])
